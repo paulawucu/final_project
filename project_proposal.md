@@ -42,6 +42,7 @@ indicate rates or changes over the past few years.
 
 ### Anticipated Data Source
 
+<<<<<<< HEAD
 Main dataset: Provisional counts for drug overdose deaths within the 50
 and the District of Columbia 2015-2021:
 <https://data.cdc.gov/NCHS/VSRR-Provisional-Drug-Overdose-Death-Counts/xkb8-kh2a>
@@ -50,6 +51,14 @@ and the District of Columbia 2015-2021:
 <https://www.cdc.gov/nchs/nvss/vsrr/drug-overdose-data.htm>;
 <https://www.drugabuse.gov/drug-topics/opioids/opioid-summaries-by-state>;
 <https://www.statista.com/>
+=======
+Based on a current flow of mortality data in the National Vital
+Statistics System, [this
+data](https://data.cdc.gov/NCHS/VSRR-Provisional-Drug-Overdose-Death-Counts/xkb8-kh2a)
+contains provisional counts for drug overdose deaths within the 50 and
+the District of Columbia 2015-2021.
+(<https://data.cdc.gov/NCHS/VSRR-Provisional-Drug-Overdose-Death-Counts/xkb8-kh2a>)
+>>>>>>> 523a4b8205b79e72c9cdda74c0a0f78de833e48d
 
 ### Planned Analyses
 

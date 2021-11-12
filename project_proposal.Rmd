@@ -1,6 +1,9 @@
 ---
 title: "P8105 Final Project Proposal"
-output: github_document
+output: pdf_document
+fontsize: 10pt
+geometry: 
+  margin = 0.5in
 ---
 
 ```{r setup, include=FALSE}
@@ -42,5 +45,3 @@ Data mining
 Combination of different datasets
 
 ### Planned Timeline
-
-
