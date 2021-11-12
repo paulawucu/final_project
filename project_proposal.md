@@ -44,8 +44,10 @@ indicate rates or changes over the past few years.
 ### Anticipated Data Source
 
 Based on a current flow of mortality data in the National Vital
-Statistics System, this data contains provisional counts for drug
-overdose deaths within the 50 and the District of Columbia 2015-2021
+Statistics System, [this
+data](https://data.cdc.gov/NCHS/VSRR-Provisional-Drug-Overdose-Death-Counts/xkb8-kh2a)
+contains provisional counts for drug overdose deaths within the 50 and
+the District of Columbia 2015-2021.
 (<https://data.cdc.gov/NCHS/VSRR-Provisional-Drug-Overdose-Death-Counts/xkb8-kh2a>)
 
 ### Planned Analyses
