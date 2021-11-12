@@ -67,4 +67,6 @@ different types of drug Cause of death across different drug
 ### Coding challenges
 
 Multi-dimensional data processing Data tidying Data mining Combination
-of different datasets 111 333 \#\#\# Planned Timeline
+of different datasets &lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD 111 333 =======
+111222 &gt;&gt;&gt;&gt;&gt;&gt;&gt;
+e853c4ba89bace0daadc2af94ad5eceede20b039 \#\#\# Planned Timeline

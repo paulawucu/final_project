@@ -40,8 +40,12 @@ Multi-dimensional data processing
 Data tidying
 Data mining
 Combination of different datasets
+<<<<<<< HEAD
 111
 333
+=======
+111222
+>>>>>>> e853c4ba89bace0daadc2af94ad5eceede20b039
 ### Planned Timeline
 
 
