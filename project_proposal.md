@@ -5,8 +5,8 @@ P8105 Final Project Proposal
 
 ### Team members:
 
-Jinghan Liu (jl6048) Paula Wu (pw2551) Yuxuan Chen (yc4018) Yuan Meng
-(ym2866) Yijia Chen (yc3883)
+Jinghan Liu (jl6048); Paula Wu (pw2551); Yuxuan Chen (yc4018); Yuan Meng
+(ym2866); Yijia Chen (yc3883)
 
 ### Motivation:
 
@@ -67,4 +67,6 @@ different types of drug Cause of death across different drug
 ### Coding challenges
 
 Multi-dimensional data processing Data tidying Data mining Combination
-of different datasets 111 \#\#\# Planned Timeline
+of different datasets
+
+### Planned Timeline

@@ -9,7 +9,7 @@ knitr::opts_chunk$set(echo = TRUE)
 
 ## Analyses in Drug Overdose and Death Counts Across States
 ### Team members:
-Jinghan Liu (jl6048) Paula Wu (pw2551) Yuxuan Chen (yc4018) Yuan Meng (ym2866) Yijia Chen (yc3883)
+Jinghan Liu (jl6048); Paula Wu (pw2551); Yuxuan Chen (yc4018); Yuan Meng (ym2866); Yijia Chen (yc3883)
 
 ### Motivation:
 “Drug Overdose Deaths Remain High” - the headline posted by CDC rings the bell. Ever since 1999, nearly 841,000 people have died from drug overdoses. 70,630 drug overdose deaths occurred in the United States, in 2019 alone [1,2]. The abuse of and addiction to drugs is a genuine national crisis that influences public health as well as social and financial welfare. <br><br>
@@ -40,7 +40,7 @@ Multi-dimensional data processing
 Data tidying
 Data mining
 Combination of different datasets
-111
+
 ### Planned Timeline
 
 
