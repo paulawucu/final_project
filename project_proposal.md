@@ -61,3 +61,14 @@ Multi-dimensional data processing; Data tidying; Data mining;
 Combination of different datasets
 
 ### Planned Timeline
+
+-   November 9-11: Roughly determine the topic and divide the work to
+    find data
+-   November 11-13: Determine the topic to complete the proposal
+-   November 11-15: Finish data collection
+-   November 16-22: Determine the big frame and how to analysis data and
+    data cleaning
+-   November 23-25: Website design
+-   December 1-5: Finish the report, webpage, and screencast
+-   December 6-11: Improvement and Adjustment; Peer assessment; Prepare
+    for the presentation
