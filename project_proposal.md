@@ -13,15 +13,14 @@ Jinghan Liu (jl6048); Paula Wu (pw2551); Yuxuan Chen (yc4018); Yuan Meng
 “Drug Overdose Deaths Remain High” - the headline posted by CDC rings
 the bell. Deaths resulting from drug overdose increase drastically in
 every state, especially in those who recently passed bills to
-legalize/decriminalized recreational cannabis or marijuana in recent
-years. The abuse of and addiction to drugs is a genuine national crisis
-that influences public health as well as social and financial welfare.
-<br><br> Though CDC has posted the US drug overdose death rate, rate
-change maps from 2014-2019, there hasn’t been any update for the past
-2-3 years. Thus, our group wants to start from here and do more
-investigation upon the drug overdose death rate across states in the US.
-Fortunately, there are available drug-overdose-related data online to
-propel our motivation even further.
+decriminalize recreational cannabis or marijuana. The abuse of and
+addiction to drugs is a genuine national crisis that influences public
+health as well as social and financial welfare. <br><br> Also, the
+posted drug overdose death rate and rate change maps from CDC haven’t
+been updated for the past 2-3 years. Thus, our group wants to start from
+here and do more investigation upon the drug overdose death rate across
+states in the US based on other data resources online to propel our
+motivation even further.
 
 ### Intended Final Product
 
