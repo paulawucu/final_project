@@ -28,27 +28,37 @@ even further.
 
 ### Intended Final Product
 
-The final product will be an organized report, a web page, a screencast,
-and corresponding Github repo. The report will fully describe our
-process and results and cover data collection and cleaning, exploratory
-analyses, alternative strategies, descriptions of approaches, and a
-discussion of results. We will also create a webpage and a screencast
-for our project that can give an overview of the project scope, data,
-approaches, visualizations, and other results.<br><br> Our final
-products could help to identify the factors that are associated with
-drug overdose and drug overdose death. Based on identified factors, we
-could draw a picture for the groups of people that are more vulnerable
-when facing drug overdose. <br><br> We will include heat maps to
+Our final products will include an organized report, a web page, a
+screencast, and corresponding Github repo. The report will fully
+describe our process and results that cover data collection and
+cleaning, EDA (e.g. heatmap), data mining, modeling, and result
+discussions. The webpage and screencast can give an overview of the
+project scope, data, approaches, visualizations, and other
+results.<br><br> The content in our final product aims to help identify
+factors associated with drug overdose mortality rate. Based on
+identified factors, we could identify groups of people that are more
+vulnerable when facing drug overdose.We will include heat maps to
 indicate rates or changes over the past few years.
 
 ### Anticipated Data Source
 
+<<<<<<< HEAD
+Main dataset: Provisional counts for drug overdose deaths within the 50
+and the District of Columbia 2015-2021:
+<https://data.cdc.gov/NCHS/VSRR-Provisional-Drug-Overdose-Death-Counts/xkb8-kh2a>
+<br>Other helpful sources:
+<https://worldpopulationreview.com/state-rankings/crime-rate-by-state>;
+<https://www.cdc.gov/nchs/nvss/vsrr/drug-overdose-data.htm>;
+<https://www.drugabuse.gov/drug-topics/opioids/opioid-summaries-by-state>;
+<https://www.statista.com/>
+=======
 Based on a current flow of mortality data in the National Vital
 Statistics System, [this
 data](https://data.cdc.gov/NCHS/VSRR-Provisional-Drug-Overdose-Death-Counts/xkb8-kh2a)
 contains provisional counts for drug overdose deaths within the 50 and
 the District of Columbia 2015-2021.
 (<https://data.cdc.gov/NCHS/VSRR-Provisional-Drug-Overdose-Death-Counts/xkb8-kh2a>)
+>>>>>>> 523a4b8205b79e72c9cdda74c0a0f78de833e48d
 
 ### Planned Analyses
 
