@@ -3,9 +3,7 @@ title: "P8105 Final Project Proposal"
 output: github_document
 ---
 
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
-```
+
 
 ## Analyses in Drug Overdose and Death Counts Across States
 ### Team members:
