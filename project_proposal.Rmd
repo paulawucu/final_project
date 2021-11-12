@@ -1,6 +1,9 @@
 ---
 title: "P8105 Final Project Proposal"
 output: pdf_document
+fontsize: 10pt
+geometry: 
+  margin = 0.5in
 ---
 
 ```{r setup, include=FALSE}
