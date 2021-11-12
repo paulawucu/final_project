@@ -41,19 +41,19 @@ and the District of Columbia 2015-2021:
 
 ### Planned Analyses
 
-Questions to explore: How different types of drugs affect the death
+**Questions to explore**: How different types of drugs affect the death
 rate? Drug usage in different states? What identities make people more
 likely to be trapped into drug overdose in the U.S? What are the most
 significant factors that contribute to a higher drug overdose rate /
-death rate over times? <br> Techniques: basic data processing in R
+death rate over times? <br> **Techniques**: basic data processing in R
 studio, EDA, time-series analysis, and modeling.
 
 ### Visualizations
 
 Map that allows users to view the fatality rate of overdose in various
-states of the US. Mortality (rate) caused by each type of drug Types of
-drug overdose by region Fatality rate in different years with different
-types of drug Cause of death across different drug
+states of the US; Mortality (rate) caused by each type of drug; Types of
+drug overdose by region; Fatality rate in different years with different
+types of drug; Cause of death across different drug
 
 ### Coding challenges
 
