@@ -58,7 +58,7 @@ types of drug Cause of death across different drug
 
 ### Coding challenges
 
-Multi-dimensional data processing Data tidying Data mining Combination
-of different datasets
+Multi-dimensional data processing; Data tidying; Data mining;
+Combination of different datasets
 
 ### Planned Timeline
