@@ -16,18 +16,17 @@ every state, especially in those who recently passed bills to
 decriminalize recreational cannabis or marijuana. The abuse of and
 addiction to drugs is a genuine national crisis that influences public
 health as well as social and financial welfare. <br><br> Also, the
-posted drug overdose death rate and rate change maps from CDC haven’t
-been updated for the past 2-3 years. Thus, our group wants to start from
-here and do more investigation upon the drug overdose death rate across
-states in the US based on other data resources online to propel our
-motivation even further.
+posted drug overdose death rate and rate change maps by CDC haven’t been
+updated for the past 2-3 years. Thus, our group wants to start from here
+and do more investigation upon the drug overdose death rate across
+states in the US, together with other data resources online.
 
 ### Intended Final Product
 
 Apart from the required final products mentioned in the course website,
 the content in our final product aims to help identify factors
 associated with drug overdose mortality rate. Based on identified
-factors, we could identify groups of people that are more vulnerable
+factors, we want to identify groups of people that are more vulnerable
 when facing drug overdose.
 
 ### Anticipated Data Source
@@ -42,23 +41,24 @@ and the District of Columbia 2015-2021:
 ### Planned Analyses
 
 **Questions to explore**: How different types of drugs affect the death
-rate? Drug usage in different states? What identities make people more
-likely to be trapped into drug overdose in the U.S? What are the most
-significant factors that contribute to a higher drug overdose rate /
-death rate over times? <br> **Techniques**: basic data processing in R
-studio, EDA, time-series analysis, and modeling.
+rate? How does drug usage differ across states? What identities make
+people more likely to be trapped into drug overdose in the U.S? What are
+the most significant factors that contribute to a higher drug overdose
+rate / death rate over times? <br> **Techniques** (but not limited to):
+basic data processing in R studio, EDA, time-series analysis, and
+modeling.
 
 ### Visualizations
 
-Map that allows users to view the fatality rate of overdose in various
-states of the US; Mortality (rate) caused by each type of drug; Types of
-drug overdose by region; Fatality rate in different years with different
-types of drug; Cause of death across different drug
+**Plots** to visualize: mortality (rate) caused by each type of drug;
+fatality rate of different types of drug across years <br> **Maps** that
+allow users to view: the fatality rate of overdose in various states of
+the US; types of drug overdose by region.
 
 ### Coding challenges
 
 Multi-dimensional data processing; Data tidying; Data mining;
-Combination of different datasets
+Combination of different data sets
 
 ### Planned Timeline
 
