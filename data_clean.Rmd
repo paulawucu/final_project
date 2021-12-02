@@ -1,6 +1,6 @@
 ---
 title: "Data Cleaning"
-output: html_document
+output: github_document
 ---
 
 ```{r setup, include=FALSE}
@@ -94,7 +94,6 @@ od_overview_plot =
   theme_set(theme_minimal() + theme(legend.position = "bottom")) +
   theme(axis.text.x = element_text(angle = 90, vjust = 0.4, hjust = 1))
   
-ggplotly(od_overview_plot)
 
 ##2015 CA, 2016 FL, 2017 OH, 2018 FL, 2020 CA, 2021 CA
 ```
@@ -126,7 +125,6 @@ drug_overview_plot =
   theme_set(theme_minimal() + theme(legend.position = "bottom")) +
   theme(axis.text.x = element_text(angle = 90, vjust = 0.4, hjust = 1))
   
-ggplotly(drug_overview_plot)
 
 ```
 
@@ -145,4 +143,3 @@ drug_overview_us =
   theme_set(theme_minimal() + theme(legend.position = "bottom")) +
   theme(axis.text.x = element_text(angle = 90, vjust = 0.4, hjust = 1))
   
-ggplotly(drug_overview_us)
