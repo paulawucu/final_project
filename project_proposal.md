@@ -11,62 +11,53 @@ Jinghan Liu (jl6048); Paula Wu (pw2551); Yuxuan Chen (yc4018); Yuan Meng
 ### Motivation:
 
 “Drug Overdose Deaths Remain High” - the headline posted by CDC rings
-the bell. Ever since 1999, nearly 841,000 people have died from drug
-overdoses. 70,630 drug overdose deaths occurred in the United States, in
-2019 alone \[1,2\]. Deaths resulting from drug overdose increase
-drastically in every state, especially in those who recently passed
-bills to legalize/decriminalized recreational cannabis or marijuana in
-recent years. The abuse of and addiction to drugs is a genuine national
-crisis that influences public health as well as social and financial
-welfare. <br><br> Though CDC has posted the US drug overdose death rate
-and rate change maps from 2014-2019 along with the rate change graphs
-from 2014-2017, there hasn’t been any update for the past two years.
-Thus, our group wants to start from here and do more investigation upon
-the drug overdose death rate across states in the US. Fortunately, there
-are available drug-overdose-related data online to propel our motivation
-even further.
+the bell. Deaths resulting from drug overdose increase drastically in
+every state, especially in those who recently passed bills to
+decriminalize recreational cannabis or marijuana. The abuse of and
+addiction to drugs is a genuine national crisis that influences public
+health as well as social and financial welfare. <br><br> Also, the
+posted drug overdose death rate and rate change maps by CDC haven’t been
+updated for the past 2-3 years. Thus, our group wants to start from here
+and do more investigation upon the drug overdose death rate across
+states in the US, together with other data resources online.
 
 ### Intended Final Product
 
-The final product will be an organized report, a web page, a screencast,
-and corresponding Github repo. The report will fully describe our
-process and results and cover data collection and cleaning, exploratory
-analyses, alternative strategies, descriptions of approaches, and a
-discussion of results. We will also create a webpage and a screencast
-for our project that can give an overview of the project scope, data,
-approaches, visualizations, and other results.<br><br> Our final
-products could help to identify the factors that are associated with
-drug overdose and drug overdose death. Based on identified factors, we
-could draw a picture for the groups of people that are more vulnerable
-when facing drug overdose. <br><br> We will include heat maps to
-indicate rates or changes over the past few years.
+Apart from the required final products mentioned in the course website,
+the content in our final product aims to help identify factors
+associated with drug overdose mortality rate. Based on identified
+factors, we want to identify groups of people that are more vulnerable
+when facing drug overdose.
 
 ### Anticipated Data Source
 
-Based on a current flow of mortality data in the National Vital
-Statistics System, [this
-data](https://data.cdc.gov/NCHS/VSRR-Provisional-Drug-Overdose-Death-Counts/xkb8-kh2a)
-contains provisional counts for drug overdose deaths within the 50 and
-the District of Columbia 2015-2021.
-(<https://data.cdc.gov/NCHS/VSRR-Provisional-Drug-Overdose-Death-Counts/xkb8-kh2a>)
+Main dataset: Provisional counts for drug overdose deaths within the 50
+and the District of Columbia 2015-2021:
+<https://data.cdc.gov/NCHS/VSRR-Provisional-Drug-Overdose-Death-Counts/xkb8-kh2a>
+<br>Other helpful sources:
+<https://www.cdc.gov/nchs/nvss/vsrr/drug-overdose-data.htm>;
+<https://www.drugabuse.gov/drug-topics/opioids/opioid-summaries-by-state>
 
 ### Planned Analyses
 
-How different types of drugs affect the death rate? Drug usage in
-different states? What identities make people more likely to be trapped
-into drug overdose in the U.S? <br> We will probably use time-series
-analysis and wants to find the most significant factors that contribute
-to a higher drug overdose rate / death rate over times.
+**Questions to explore**: How different types of drugs affect the death
+rate? How does drug usage differ across states? What identities make
+people more likely to be trapped into drug overdose in the U.S? What are
+the most significant factors that contribute to a higher drug overdose
+rate / death rate over times? <br> **Techniques** (but not limited to):
+basic data processing in R studio, EDA, time-series analysis, and
+modeling.
 
 ### Visualizations
 
-Created a map that allows users to view the fatality rate of overdose in
-various states of the US. Mortality (rate) caused by each type of drug
-Types of drug overdose by region Fatality rate in different years with
-different types of drug Cause of death across different drug
+**Plots** to visualize: mortality (rate) caused by each type of drug;
+fatality rate of different types of drug across years <br> **Maps** that
+allow users to view: the fatality rate of overdose in various states of
+the US; types of drug overdose by region.
 
 ### Coding challenges
 
+<<<<<<< HEAD
 Multi-dimensional data processing Data tidying Data mining Combination
 <<<<<<< HEAD
 of different datasets &lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD 111 333 =======
@@ -77,3 +68,20 @@ of different datasets
 
 ### Planned Timeline
 >>>>>>> 523a4b8205b79e72c9cdda74c0a0f78de833e48d
+=======
+Multi-dimensional data processing; Data tidying; Data mining;
+Combination of different data sets
+
+### Planned Timeline
+
+-   November 9-11: Roughly determine the topic and divide the work to
+    find data
+-   November 11-13: Determine the topic to complete the proposal
+-   November 11-15: Finish data collection
+-   November 16-22: Determine the big frame and how to analysis data and
+    data cleaning
+-   November 23-25: Website design
+-   December 1-5: Finish the report, webpage, and screencast
+-   December 6-11: Improvement and Adjustment; Peer assessment; Prepare
+    for the presentation
+>>>>>>> f362ec3664788a9b1998bfc6ae41233b7e2dfaf7
