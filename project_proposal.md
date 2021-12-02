@@ -5,27 +5,26 @@ P8105 Final Project Proposal
 
 ### Team members:
 
-Jinghan Liu (jl6048) Paula Wu (pw2551) Yuxuan Chen (yc4018) Yuan Meng
-(ym2866) Yijia Chen (yc3883)
+Jinghan Liu (jl6048); Paula Wu (pw2551); Yuxuan Chen (yc4018); Yuan Meng
+(ym2866); Yijia Chen (yc3883)
 
 ### Motivation:
 
 “Drug Overdose Deaths Remain High” - the headline posted by CDC rings
 the bell. Ever since 1999, nearly 841,000 people have died from drug
 overdoses. 70,630 drug overdose deaths occurred in the United States, in
-2019 alone \[1,2\]. The abuse of and addiction to drugs is a genuine
-national crisis that influences public health as well as social and
-financial welfare. <br><br> Deaths resulting from drug overdose
-increases drastically in every state of the U.S. especially in states
-with the legality of cannabis or marijuana in recent years. Drug
-overdose is becoming an increasingly significant social and public
-health problem in the United States. <br><br> Though CDC has posted the
-US drug overdose death rate and rate change maps from 2014-2019 along
-with the rate change graphs from 2014-2017, there hasn’t been any update
-for the past two years. Thus, our group wants to start from here and do
-more investigation upon the drug overdose death rate across states in
-the US. Fortunately, there are available drug-overdose-related data
-online to propel our motivation even further.
+2019 alone \[1,2\]. Deaths resulting from drug overdose increase
+drastically in every state, especially in those who recently passed
+bills to legalize/decriminalized recreational cannabis or marijuana in
+recent years. The abuse of and addiction to drugs is a genuine national
+crisis that influences public health as well as social and financial
+welfare. <br><br> Though CDC has posted the US drug overdose death rate
+and rate change maps from 2014-2019 along with the rate change graphs
+from 2014-2017, there hasn’t been any update for the past two years.
+Thus, our group wants to start from here and do more investigation upon
+the drug overdose death rate across states in the US. Fortunately, there
+are available drug-overdose-related data online to propel our motivation
+even further.
 
 ### Intended Final Product
 
@@ -45,8 +44,10 @@ indicate rates or changes over the past few years.
 ### Anticipated Data Source
 
 Based on a current flow of mortality data in the National Vital
-Statistics System, this data contains provisional counts for drug
-overdose deaths within the 50 and the District of Columbia 2015-2021
+Statistics System, [this
+data](https://data.cdc.gov/NCHS/VSRR-Provisional-Drug-Overdose-Death-Counts/xkb8-kh2a)
+contains provisional counts for drug overdose deaths within the 50 and
+the District of Columbia 2015-2021.
 (<https://data.cdc.gov/NCHS/VSRR-Provisional-Drug-Overdose-Death-Counts/xkb8-kh2a>)
 
 ### Planned Analyses
@@ -67,6 +68,12 @@ different types of drug Cause of death across different drug
 ### Coding challenges
 
 Multi-dimensional data processing Data tidying Data mining Combination
+<<<<<<< HEAD
 of different datasets &lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD 111 333 =======
 111222 &gt;&gt;&gt;&gt;&gt;&gt;&gt;
 e853c4ba89bace0daadc2af94ad5eceede20b039 \#\#\# Planned Timeline
+=======
+of different datasets
+
+### Planned Timeline
+>>>>>>> 523a4b8205b79e72c9cdda74c0a0f78de833e48d
