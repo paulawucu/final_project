@@ -57,6 +57,18 @@ the US; types of drug overdose by region.
 
 ### Coding challenges
 
+<<<<<<< HEAD
+Multi-dimensional data processing Data tidying Data mining Combination
+<<<<<<< HEAD
+of different datasets &lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD 111 333 =======
+111222 &gt;&gt;&gt;&gt;&gt;&gt;&gt;
+e853c4ba89bace0daadc2af94ad5eceede20b039 \#\#\# Planned Timeline
+=======
+of different datasets
+
+### Planned Timeline
+>>>>>>> 523a4b8205b79e72c9cdda74c0a0f78de833e48d
+=======
 Multi-dimensional data processing; Data tidying; Data mining;
 Combination of different data sets
 
@@ -72,3 +84,4 @@ Combination of different data sets
 -   December 1-5: Finish the report, webpage, and screencast
 -   December 6-11: Improvement and Adjustment; Peer assessment; Prepare
     for the presentation
+>>>>>>> f362ec3664788a9b1998bfc6ae41233b7e2dfaf7
