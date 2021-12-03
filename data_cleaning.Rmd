@@ -62,7 +62,11 @@ drug_overdose_51 =
   group_by(state_name, year) %>% 
   mutate(month = sort(month)) # sort by month order
 
-drug_overdose_51
+drug_overdose_51 %>% 
+  ungroup() %>% 
+  filter(indicator == "Number of Drug Overdose Deaths") %>% 
+  select(data_value, predicted_value)
+
 ```
 
  - Since the dataset mostly doesn't have the death count values for specific types of drug overdose, for this dataset, we only choose the data_value with indicator of `Number of Deaths`, `Percent with drugs specified`, and `Number of Drug Overdose Deaths`.
