@@ -21,6 +21,7 @@ library(choroplethrMaps)
 
 knitr::opts_chunk$set(
 	echo = TRUE,
+	message = FALSE,
 	warning = FALSE,
 	fig.width = 9, 
   fig.height = 6,
@@ -174,60 +175,116 @@ summarize_nyc_drug %>%
 3. Median Household Income
 
 ```{r}
-income_df = 
+ny_eco_df = 
   read_csv("./data/median_household_income_ny.csv") %>% 
   janitor::clean_names() %>% 
   select(year, household_income_by_race, household_income_by_race_moe, geography) %>% 
-  filter(
-    geography %in% c("New York, NY", "United States"),
-    year >= "2015") %>% 
-  mutate(
-    geography = str_replace(geography, ", NY", "")) 
+  filter(year >= "2015",
+         !(geography  %in% c("New York-Newark-Jersey City, NY-NJ-PA", "New York"))) %>% 
+  mutate( 
+    geography = str_replace(geography, "New York, NY", "New York City"),
+    geography = str_replace(geography, ", NY", ""),
+    year = factor(year))
 
-income_df %>% 
+ny_eco_df %>% 
   mutate(text_label = str_c("Year: ", year, "\nMedian Household Income: $", household_income_by_race, 
                             "\nMargin of error: ± $", household_income_by_race_moe)) %>% 
   plot_ly(
     x = ~year, y = ~household_income_by_race, color = ~geography, text = ~text_label, 
-    alpha = 0.5, type = "scatter", mode = "markers+lines", colors = "viridis") %>% 
+    alpha = 0.5, type = "scatter", mode = "markers+lines", colors = "viridis",error_y = ~list(array = household_income_by_race_moe)) %>% 
   layout(
     title = "Median Household Income: New York vs. The U.S",
          xaxis = list(title = "Year"),
          yaxis = list(title = "Median Household Income"))
-  
 ```
 
 
-4. Map by county:
-leeeeeet's see.....
-```{r, eval = FALSE}
-data(county.fips)
-abc = county.fips %>% 
-  filter(str_detect(polyname, "new york,bronx|,new york|queens|new york,kings|new york,richmond")) %>% 
-  separate(polyname, into = c("state", "county"), sep = "\\,") %>% 
-  select(-state) %>% 
-  as.tibble() %>% 
-  mutate(value = c(100,300,500,300,200)) %>% 
-  rename(region = fips,
-         value = value) %>% 
-  select(-county)  # number made up
-d = abc %>% 
-  select(region)
-county_choropleth(abc, county_zoom = d$region)
-```
+5. Map of Death rates by NYC counties:
+
 ```{r}
+ny_county_df = 
+  read_csv("./data/NCHS_-_Drug_Poisoning_Mortality_by_County__United_States.csv") %>% 
+  janitor::clean_names() %>% 
+  filter(state %in% "New York",
+         year >= 2015) %>% 
+  select(year, county, population, model_based_death_rate) %>% 
+  rename(death_rate = model_based_death_rate) %>% 
+  mutate(
+    county = str_replace(county, "County, NY", "")) %>% 
+  mutate(year = factor(year),
+         county = str_to_lower(county)) %>% 
+  filter(str_detect(county, "bronx|queens|kings|new york|richmond")) %>% 
+  relocate(county)
+ny_county_df
+```
+
+```{r}
+data(county.fips)
+nyc_fip = county.fips %>% 
+  filter(str_detect(polyname, "new york")) %>% 
+  mutate(
+    polyname = str_replace(polyname, "new york,", "")) %>% 
+  filter(str_detect(polyname, "bronx|queens|kings|new york|richmond")) %>% 
+  as.tibble() %>% 
+  slice(rep(1:n(), each = 4)) %>% 
+  select(fips)
+
+ny_county_df_2015 = 
+  bind_cols(ny_county_df, nyc_fip) %>% 
+  filter(year == 2015)
+```
+
+
+```{r}
+highlight_county = function(county_fips)
+{
+  data(county.map, package="choroplethrMaps", envir=environment())
+  df = county.map[county.map$region %in% county_fips, ]
+  geom_polygon(data=df, aes(long, lat, group = group), color = "yellow", fill = NA, size = 1)
+}
+add_text_county = function(county_fips){
+  data(county.map, package="choroplethrMaps", envir=environment())
+  df = county.map[county.map$region %in% county_fips, ]
+  #geom_text(data=df, aes(mean(long), mean(lat), label = paste0(str_to_title(pull(county_fips, county)), " County\n", pull(county_fips, death_rate))), color = "white")
+  geom_label(data=df, aes(mean(long), mean(lat), label = paste0(str_to_title(pull(county_fips, county)), " County\nDR: ", round(pull(county_fips, death_rate),2))), fill = "white", size = 3)
+}
+
+ny_deathrate_2015 = 
+  ny_county_df_2015 %>%
+  select(-population) %>% 
+  rename(region = fips,
+        value = death_rate) %>% 
+  select(value, region)
+
+county_choropleth(ny_deathrate_2015, title = "Death rates of Counties in New York City in 2015",
+                    legend = "Death rates",
+                    county_zoom = ny_deathrate_2015$region) +
+highlight_county(ny_county_df_2015[which.max(pull(ny_county_df_2015, death_rate)),]) +
+add_text_county(ny_county_df_2015[which.max(pull(ny_county_df_2015, death_rate)),])
+```
+
+6. Map of Population by NYC counties:
+
+```{r}
+ny_county_pop_2015 = 
+  ny_county_df_2015 %>% 
+  select(population, fips) %>% 
+  rename(value = population,
+         region = fips)
+
 data(county.regions)
 nyc_county_names = c("kings", "bronx", "new york", "queens", "richmond")
 nyc_county_fips = county.regions %>%
   filter(state.name == "new york" & county.name %in% nyc_county_names) %>%
   select(region)
-county_choropleth(df_pop_county, 
-                  title        = "Population of Counties in New York City",
+
+county_choropleth(ny_county_pop_2015, 
+                  title        = "Population of Counties in New York City in 2015",
                   legend       = "Population",
                   county_zoom = nyc_county_fips$region)
-
 ```
 
+7. 
 
 
 
