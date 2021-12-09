@@ -425,6 +425,169 @@ education_rate =
 
     ## Joining, by = "state"
 
+## unemployment
+
+load the unemployment 2015-2019
+
+``` r
+unemployment_2015 =
+  read_csv("data_regression_us/unemployment/unemployment_2015.csv")
+```
+
+    ## Rows: 53 Columns: 282
+
+    ## -- Column specification --------------------------------------------------------
+    ## Delimiter: ","
+    ## chr (282): GEO_ID, NAME, S2301_C01_001E, S2301_C01_001M, S2301_C01_002E, S23...
+
+    ## 
+    ## i Use `spec()` to retrieve the full column specification for this data.
+    ## i Specify the column types or set `show_col_types = FALSE` to quiet this message.
+
+``` r
+unemployment_2015 = 
+  unemployment_2015[-1,] %>% 
+  select(NAME, S2301_C04_001E) %>% 
+  mutate(
+    unemployment_rate_2015 = as.numeric(S2301_C04_001E),
+    state = NAME
+  ) %>% 
+  select(state, unemployment_rate_2015)
+
+
+
+unemployment_2016 =
+  read_csv("data_regression_us/unemployment/unemployment_2016.csv")
+```
+
+    ## Rows: 53 Columns: 282
+
+    ## -- Column specification --------------------------------------------------------
+    ## Delimiter: ","
+    ## chr (282): GEO_ID, NAME, S2301_C01_001E, S2301_C01_001M, S2301_C01_002E, S23...
+
+    ## 
+    ## i Use `spec()` to retrieve the full column specification for this data.
+    ## i Specify the column types or set `show_col_types = FALSE` to quiet this message.
+
+``` r
+unemployment_2016 = 
+  unemployment_2016[-1,] %>% 
+  select(NAME, S2301_C04_001E) %>% 
+  mutate(
+    unemployment_rate_2016 = as.numeric(S2301_C04_001E),
+    state = NAME
+  ) %>% 
+  select(state, unemployment_rate_2016)
+
+
+unemployment_2017 =
+  read_csv("data_regression_us/unemployment/unemployment_2017.csv")
+```
+
+    ## Rows: 53 Columns: 282
+
+    ## -- Column specification --------------------------------------------------------
+    ## Delimiter: ","
+    ## chr (282): GEO_ID, NAME, S2301_C01_001E, S2301_C01_001M, S2301_C01_002E, S23...
+
+    ## 
+    ## i Use `spec()` to retrieve the full column specification for this data.
+    ## i Specify the column types or set `show_col_types = FALSE` to quiet this message.
+
+``` r
+unemployment_2017 = 
+  unemployment_2017[-1,] %>% 
+  select(NAME, S2301_C04_001E) %>% 
+  mutate(
+    unemployment_rate_2017 = as.numeric(S2301_C04_001E),
+    state = NAME
+  ) %>% 
+  select(state, unemployment_rate_2017)
+
+
+unemployment_2018 =
+  read_csv("data_regression_us/unemployment/unemployment_2018.csv")
+```
+
+    ## Rows: 53 Columns: 282
+
+    ## -- Column specification --------------------------------------------------------
+    ## Delimiter: ","
+    ## chr (282): GEO_ID, NAME, S2301_C01_001E, S2301_C01_001M, S2301_C01_002E, S23...
+
+    ## 
+    ## i Use `spec()` to retrieve the full column specification for this data.
+    ## i Specify the column types or set `show_col_types = FALSE` to quiet this message.
+
+``` r
+unemployment_2018 = 
+  unemployment_2018[-1,] %>% 
+  select(NAME, S2301_C04_001E) %>% 
+  mutate(
+    unemployment_rate_2018 = as.numeric(S2301_C04_001E),
+    state = NAME
+  ) %>% 
+  select(state, unemployment_rate_2018)
+
+
+unemployment_2019 =
+  read_csv("data_regression_us/unemployment/unemployment_2019.csv")
+```
+
+    ## Rows: 53 Columns: 282
+
+    ## -- Column specification --------------------------------------------------------
+    ## Delimiter: ","
+    ## chr (282): GEO_ID, NAME, S2301_C01_001E, S2301_C01_001M, S2301_C01_002E, S23...
+
+    ## 
+    ## i Use `spec()` to retrieve the full column specification for this data.
+    ## i Specify the column types or set `show_col_types = FALSE` to quiet this message.
+
+``` r
+unemployment_2019 = 
+  unemployment_2019[-1,] %>% 
+  select(NAME, S2301_C04_001E) %>% 
+  mutate(
+    unemployment_rate_2019 = as.numeric(S2301_C04_001E),
+    state = NAME
+  ) %>% 
+  select(state, unemployment_rate_2019)
+```
+
+overall unemployment
+
+## crude divorce rate
+
+load the divorce count data from 2015-2019
+
+``` r
+unemployment_2015 =
+  read_csv("data_regression_us/unemployment/unemployment_2015.csv")
+```
+
+    ## Rows: 53 Columns: 282
+
+    ## -- Column specification --------------------------------------------------------
+    ## Delimiter: ","
+    ## chr (282): GEO_ID, NAME, S2301_C01_001E, S2301_C01_001M, S2301_C01_002E, S23...
+
+    ## 
+    ## i Use `spec()` to retrieve the full column specification for this data.
+    ## i Specify the column types or set `show_col_types = FALSE` to quiet this message.
+
+``` r
+unemployment_2015 = 
+  unemployment_2015[-1,] %>% 
+  select(NAME, S2301_C04_001E) %>% 
+  mutate(
+    unemployment_rate_2015 = as.numeric(S2301_C04_001E),
+    state = NAME
+  ) %>% 
+  select(state, unemployment_rate_2015)
+```
+
 ## regression overall data
 
 ``` r
