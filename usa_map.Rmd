@@ -3,6 +3,7 @@ library(plotly)
 library(dplyr)
 library(readr)
 ```
+
 ```{r}
 mine_df = 
   read_csv("./data/VSRR_Provisional_Drug_Overdose_Death_Counts.csv") %>% 
@@ -14,6 +15,7 @@ mine_df =
          hover = paste0(state_name, "\nDeath:", deaths))
 mine_df
 ```
+
 ```{r}
 font_style = list(
   size = 15, 
