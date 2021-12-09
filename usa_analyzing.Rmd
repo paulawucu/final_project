@@ -1,6 +1,6 @@
 ---
 title: "USA dataset"
-output: github_document
+output: html_document
 ---
 
 ```{r setup, include=FALSE}
@@ -181,5 +181,36 @@ trend_year_plot =
   theme(axis.text.x = element_text(angle = 90, vjust = 0.4, hjust = 1))
 trend_year_plot
 ```
+
+## Dumbell Plot:
+2015 vs. 2021
+```{r}
+plot_df = 
+  drug_overdose_death %>% 
+  ungroup() %>% 
+  filter(indicator %in%  c("Number of Deaths", "Number of Drug Overdose Deaths")) %>% 
+  select(state_name, year, month, indicator, deaths = data_value) %>% 
+  pivot_wider(
+    names_from = indicator,
+    values_from = deaths
+  ) %>% 
+  janitor::clean_names() %>% 
+  group_by(state_name, year, month) %>% 
+  ungroup() %>% 
+  group_by(state_name, year) %>% 
+  summarize(number_of_total_deaths = sum(number_of_deaths),
+            number_of_total_drug_deaths = sum(number_of_drug_overdose_deaths)) %>% 
+  mutate(percent_overdose_death = number_of_total_drug_deaths / number_of_total_deaths) %>% 
+  filter(year == c(2015, 2020)) %>% 
+  ungroup()
+plot_df
+```
+```{r}
+p = ggplot(data = plot_df, aes(x = percent_overdose_death, y=reorder(state_name, percent_overdose_death)))+
+  geom_line(aes(group = state_name), alpha = 0.5)+
+  geom_point(aes(color = year), alpha = 0.6, size = 4)
+ggplotly(p)
+```
+
  
  

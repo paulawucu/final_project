@@ -1,0 +1,13 @@
+name: shiny_dashboard_upload
+title:
+username:
+account: paulawucu
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 5293673
+bundleId: 5347231
+url: https://paulawucu.shinyapps.io/shiny_dashboard_upload/
+when: 1638999219.1867
+lastSyncTime: 1638999219.18678
+asMultiple: FALSE
+asStatic: FALSE
