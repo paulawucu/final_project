@@ -357,7 +357,16 @@ unemployment_2019 =
 overall unemployment
 
 ```{r}
-
+unemployment_overall =
+  join_all(list(unemployment_2019, unemployment_2018, unemployment_2017, unemployment_2016, unemployment_2015)) %>% 
+  group_by(state) %>% 
+  summarize(ave_unemployment_rate = 
+              ave(unemployment_rate_2019,
+                  unemployment_rate_2018,
+                  unemployment_rate_2017,
+                  unemployment_rate_2016,
+                  unemployment_rate_2015)) %>% 
+  select(state, ave_unemployment_rate)
 ```
 
 ## crude divorce rate
@@ -365,19 +374,100 @@ overall unemployment
 load the divorce count data from 2015-2019
 
 ```{r}
-unemployment_2015 =
-  read_csv("data_regression_us/unemployment/unemployment_2015.csv")
+divorce_2015 =
+  read_csv("data_regression_us/divorce/divorce_number_2015.csv")
 
-unemployment_2015 = 
-  unemployment_2015[-1,] %>% 
-  select(NAME, S2301_C04_001E) %>% 
+divorce_2015 = 
+  divorce_2015[-1,] %>% 
+  select(NAME, B12503_001E) %>% 
   mutate(
-    unemployment_rate_2015 = as.numeric(S2301_C04_001E),
+    divorce_num_2015 = as.numeric(B12503_001E),
     state = NAME
   ) %>% 
-  select(state, unemployment_rate_2015)
+  select(state, divorce_num_2015)
+
+
+divorce_2016 =
+  read_csv("data_regression_us/divorce/divorce_number_2016.csv")
+
+divorce_2016 = 
+  divorce_2016[-1,] %>% 
+  select(NAME, B12503_001E) %>% 
+  mutate(
+    divorce_num_2016 = as.numeric(B12503_001E),
+    state = NAME
+  ) %>% 
+  select(state, divorce_num_2016)
+
+
+divorce_2017 =
+  read_csv("data_regression_us/divorce/divorce_number_2017.csv")
+
+divorce_2017 = 
+  divorce_2017[-1,] %>% 
+  select(NAME, B12503_001E) %>% 
+  mutate(
+    divorce_num_2017 = as.numeric(B12503_001E),
+    state = NAME
+  ) %>% 
+  select(state, divorce_num_2017)
+
+
+divorce_2018 =
+  read_csv("data_regression_us/divorce/divorce_number_2018.csv")
+
+divorce_2018 = 
+  divorce_2018[-1,] %>% 
+  select(NAME, B12503_001E) %>% 
+  mutate(
+    divorce_num_2018 = as.numeric(B12503_001E),
+    state = NAME
+  ) %>% 
+  select(state, divorce_num_2018)
+
+
+divorce_2019 =
+  read_csv("data_regression_us/divorce/divorce_number_2019.csv")
+
+divorce_2019 = 
+  divorce_2019[-1,] %>% 
+  select(NAME, B12503_001E) %>% 
+  mutate(
+    divorce_num_2019 = as.numeric(B12503_001E),
+    state = NAME
+  ) %>% 
+  select(state, divorce_num_2019)
 ```
 
+overall divorce count
+
+```{r}
+divorce_overall = 
+  join_all(list(divorce_2019, divorce_2018, divorce_2017, divorce_2016, divorce_2015)) %>% 
+  group_by(state) %>% 
+  mutate(ave_divorce_num = 
+           ave(divorce_num_2019,
+               divorce_num_2018,
+               divorce_num_2017,
+               divorce_num_2016,
+               divorce_num_2015)) %>% 
+  select(state, ave_divorce_num)
+```
+
+crude divorce rate
+
+```{r}
+divorce_rate = 
+  left_join(divorce_overall, population_us) %>% 
+  mutate(divorce_rate = ave_divorce_num / population) %>% 
+  select(divorce_rate)
+```
+
+## binge drinking 
+
+```{r}
+
+```
 
 
 ## regression overall data
